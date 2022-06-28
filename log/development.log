@@ -1,0 +1,248 @@
+  [1m[35m (124.0ms)[0m  [1m[35mCREATE DATABASE "Rails_project_development" ENCODING = 'unicode'[0m
+  [1m[35m (95.4ms)[0m  [1m[35mCREATE DATABASE "Rails_project_test" ENCODING = 'unicode'[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7167210355910372565)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-06-27 20:10:31.088045"], ["updated_at", "2022-06-27 20:10:31.088045"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7167210355910372565)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 192.168.96.1 at 2022-06-27 20:10:49 +0000
+Cannot render console from 192.168.96.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.1.4.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.7ms | Allocations: 509)
+Completed 200 OK in 27ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 4117)
+
+
+Started GET "/" for 192.168.96.1 at 2022-06-27 20:13:04 +0000
+Cannot render console from 192.168.96.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RefrigerateursController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering refrigerateurs/index.html.erb within layouts/application
+  Rendered refrigerateurs/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 105)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 1189.3ms | Allocations: 12406)
+Completed 500 Internal Server Error in 1202ms (ActiveRecord: 0.0ms | Allocations: 16031)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Rails_project/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE DATABASE "Rails_project_development" ENCODING = 'unicode'[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE "Rails_project_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7167210355910372565)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7167210355910372565)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 192.168.96.1 at 2022-06-27 20:34:51 +0000
+Cannot render console from 192.168.96.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RefrigerateursController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering refrigerateurs/index.html.erb within layouts/application
+  Rendered refrigerateurs/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 384)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 863.7ms | Allocations: 8034)
+Completed 500 Internal Server Error in 886ms (ActiveRecord: 0.0ms | Allocations: 14342)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Rails_project/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 192.168.96.1 at 2022-06-27 20:35:37 +0000
+Cannot render console from 192.168.96.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RefrigerateursController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering refrigerateurs/index.html.erb within layouts/application
+  Rendered refrigerateurs/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 281)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 802.3ms | Allocations: 7610)
+Completed 500 Internal Server Error in 816ms (ActiveRecord: 0.0ms | Allocations: 12699)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Rails_project/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 192.168.96.1 at 2022-06-27 20:38:19 +0000
+Cannot render console from 192.168.96.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RefrigerateursController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering refrigerateurs/index.html.erb within layouts/application
+  Rendered refrigerateurs/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 281)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 834.9ms | Allocations: 7613)
+Completed 500 Internal Server Error in 847ms (ActiveRecord: 0.0ms | Allocations: 12702)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Rails_project/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 192.168.96.1 at 2022-06-27 20:41:07 +0000
+Cannot render console from 192.168.96.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RefrigerateursController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering refrigerateurs/index.html.erb within layouts/application
+  Rendered refrigerateurs/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 281)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 810.6ms | Allocations: 7612)
+Completed 500 Internal Server Error in 833ms (ActiveRecord: 0.0ms | Allocations: 12701)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Rails_project/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 192.168.96.1 at 2022-06-27 20:53:36 +0000
+Cannot render console from 192.168.96.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RefrigerateursController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering refrigerateurs/index.html.erb within layouts/application
+  Rendered refrigerateurs/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 34)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Rails_project/public/packs
+[Webpacker] Hash: 0fe7dcd9d8f9ebcf52de
+Version: webpack 4.46.0
+Time: 1461ms
+Built at: 06/27/2022 8:53:39 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2e212f7c8f867558ac6e.js    121 KiB  application  [emitted] [immutable]  application
+js/application-2e212f7c8f867558ac6e.js.map    136 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2e212f7c8f867558ac6e.js js/application-2e212f7c8f867558ac6e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2879.5ms | Allocations: 4257)
+Completed 200 OK in 2882ms (Views: 2880.8ms | Allocations: 4696)
+
+
