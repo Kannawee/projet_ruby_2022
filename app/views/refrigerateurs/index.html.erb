@@ -2,6 +2,12 @@
 
     <% @refrigerateurs.each do |refrigerateur|  %>
 
-    <p><%= refrigerateur.name %> </p>
-
+    <p><%= refrigerateur.name %> - <%= refrigerateur.id %>  </p>
     <% end %>
+    
+
+    <%= form_with model: @refrigerateur, url: "/create-refrigerateur", method: :get  do |form| %>
+        <%= form.label :name, "Nom du frigo" %>
+        <%= form.text_field :name %>
+        <%= form.submit %>
+      <% end %>
