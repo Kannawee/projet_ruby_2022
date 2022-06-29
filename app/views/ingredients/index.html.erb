@@ -3,6 +3,7 @@
     <% @ingredients.each do |ingredient|  %>
 
     <p><%= ingredient.name %> - <%= ingredient.id %>  </p>
+    
     <% end %>
     
 
@@ -11,3 +12,6 @@
         <%= form.text_field :name %>
         <%= form.submit %>
       <% end %>
+
+
+

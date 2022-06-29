@@ -1,13 +1,40 @@
 <h1>petit ratio du frigo</h1>
 
+<h2>Créer un refrigerateur</h2>
+  <%= form_with model: @refrigerateur, url: "/create-refrigerateur", method: :get  do |form| %>
+    <%= form.label :name, "Nom du frigo" %>
+    <%= form.text_field :name %>
+    <%= form.submit %>
+  <% end %>
+
+  <h2>Liste des refrigerateurs</h2>
     <% @refrigerateurs.each do |refrigerateur|  %>
 
-    <p><%= refrigerateur.name %> - <%= refrigerateur.id %>  </p>
+    <h3><%= refrigerateur.name %> - <%= refrigerateur.id %>  </h3>
+        <h4>Contenu du frigo</h4>
+        <p>
+      
+        <%= form_with model: @ingredient, url: "/add-ingredient/", method: :get  do |form| %>
+          <%= form.label :name, "Nom de l'ingredient" %>
+          <%= form.text_field :name %>
+          <%= form.hidden_field :id_refrigateur, value:refrigerateur.id %>
+          <%= form.hidden_field :id_refrigateur, value:refrigerateur.id %>
+          <%= form.submit %>  
+        <% end %>
+
     <% end %>
     
 
-    <%= form_with model: @refrigerateur, url: "/create-refrigerateur", method: :get  do |form| %>
-        <%= form.label :name, "Nom du frigo" %>
-        <%= form.text_field :name %>
-        <%= form.submit %>
+    <h2>Créer un ingredient </h2>
+    <%= form_with model: @ingredient, url: "/create-ingredient", method: :get  do |form| %>
+      <%= form.label :name, "Nom de l'ingredient" %>
+      <%= form.text_field :name %>
+      <%= form.submit %>
+      
+  <% end %>
+
+
+  <h2> Liste des ingredients </h2>
+      <% @ingredients.each do |ingredient|  %>
+        <p><%= ingredient.name %> - <%= ingredient.id %>  </p>
       <% end %>
