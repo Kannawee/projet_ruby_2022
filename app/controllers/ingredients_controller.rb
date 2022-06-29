@@ -1,7 +1,7 @@
-class IngredientController < ApplicationController
+class IngredientsController < ApplicationController
 
     def index
-        @ingredient = Ingredient.all
+        @ingredients = Ingredient.all
     end
     def destroy
         @ingredient.destroy
@@ -9,10 +9,11 @@ class IngredientController < ApplicationController
     def new
         @ingredient = Ingredient.new(params.permit(:name))
         respond_to do |format|
-            if @refrigerateur.save
+            if @ingredient.save
               format.html { redirect_to '/', notice: "L'ingredient a bien été créé" }
               format.json { render :show, status: :created, location: @ingredient }
-          end
+            end
+        end
     end
 
 
