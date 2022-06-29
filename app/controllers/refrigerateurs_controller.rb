@@ -20,15 +20,15 @@ class RefrigerateursController < ApplicationController
     end
 
     def add_ingredient
-        @refrigerateur_ingredient = Refrigerateuringredients.find_or_create_by(
-                            refrigerateur_id: params[:id], 
-                            ingredient_id: params[:ingredient_id]
-                             )
+        @refrigerateur_ingredient = RefrigerateurIngredient.find_or_create_by(
+            refrigerateur_id: params[:id_refrigateur], 
+            ingredient_id: params[:id_ingredient]
+        )
         respond_to do |format|
            if @refrigerateur_ingredient.save
              format.html { redirect_to '/', notice: 'Ingredient a bien été ajouté au frigo' }
-             format.json { render :show, status: :created, location: @refrigerateur }
             end
         end
     end
+
 end

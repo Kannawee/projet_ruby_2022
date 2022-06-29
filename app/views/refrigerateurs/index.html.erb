@@ -12,17 +12,32 @@
 
     <h3><%= refrigerateur.name %> - <%= refrigerateur.id %>  </h3>
         <h4>Contenu du frigo</h4>
-        <p>
-      
-        <%= form_with model: @ingredient, url: "/add-ingredient/", method: :get  do |form| %>
-          <%= form.label :name, "Nom de l'ingredient" %>
-          <%= form.text_field :name %>
-          <%= form.hidden_field :id_refrigateur, value:refrigerateur.id %>
-          <%= form.hidden_field :id_refrigateur, value:refrigerateur.id %>
-          <%= form.submit %>  
+
+          <% refrigerateur.ingredients.each do |ingredientsdufrigo| %>
+
+            <p><%= ingredientsdufrigo.name %></p>
+
+            <% end %>
+        
+
+        <h5> Liste des ingredients disponible </h5>
+        <% @ingredients.each do |ingredient|  %>
+
+          <%= form_with model: @ingredient, url: "/add-ingredient/", method: :post  do |form| %>
+            <%= form.label :name, ingredient.name %>
+            <%= form.hidden_field :id_refrigateur, value:refrigerateur.id %>
+            <%= form.hidden_field :id_ingredient, value:ingredient.id %>
+            <%= form.submit %>  
+          <% end %>
+
         <% end %>
+  
+      
+       
+        <br><br><br><br><br><br>
 
     <% end %>
+    
     
 
     <h2>Créer un ingredient </h2>
@@ -34,7 +49,3 @@
   <% end %>
 
 
-  <h2> Liste des ingredients </h2>
-      <% @ingredients.each do |ingredient|  %>
-        <p><%= ingredient.name %> - <%= ingredient.id %>  </p>
-      <% end %>

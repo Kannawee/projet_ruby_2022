@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   get '/ingredients', to: 'ingredients#index'
 
   get '/create-ingredient', to: 'ingredients#new'
+
+  post '/add-ingredient', to: 'refrigerateurs#add_ingredient'
   
 end

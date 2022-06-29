@@ -1,4 +1,4 @@
-class RefrigerateursController < ApplicationController
+class RefrigerateurIngredientsController < ApplicationController
 
     def index
         @refrigerateurs = Refrigerateur.all
@@ -18,4 +18,5 @@ class RefrigerateursController < ApplicationController
             end
         end
     end
+
 end
