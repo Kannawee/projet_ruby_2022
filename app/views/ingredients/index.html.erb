@@ -1,0 +1,13 @@
+<h1>petit ratio du frigo</h1>
+
+    <% @ingredients.each do |ingredient|  %>
+
+    <p><%= ingredient.name %> - <%= ingredient.id %>  </p>
+    <% end %>
+    
+
+    <%= form_with model: @ingredient, url: "/create-ingredient", method: :get  do |form| %>
+        <%= form.label :name, "Nom de l'ingredient" %>
+        <%= form.text_field :name %>
+        <%= form.submit %>
+      <% end %>

@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root to: 'refrigerateurs#index'
 
   get '/create-refrigerateur', to: 'refrigerateurs#new'
+  get '/ingredient', to: 'ingredients#index'
   
 end

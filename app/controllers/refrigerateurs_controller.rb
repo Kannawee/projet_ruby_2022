@@ -12,7 +12,8 @@ class RefrigerateursController < ApplicationController
             if @refrigerateur.save
               format.html { redirect_to '/', notice: "Le refrigerateur a bien été créé" }
               format.json { render :show, status: :created, location: @refrigerateur }
-          end
+            end
+        end
     end
  
 end
