@@ -4,22 +4,22 @@
         "ingredients": [
             {
                 "quantity": "1",
-                "name": " beef roast",
+                "name": " beef",
                 "type": "Meat"
             },
             {
                 "quantity": "1",
-                "name": "brown gravy mix",
+                "name": "brown gravy",
                 "type": "Baking"
             },
             {
                 "quantity": "1",
-                "name": "dried Italian salad dressing mix",
+                "name": "lettuce",
                 "type": "Condiments"
             },
             {
                 "quantity": "1",
-                "name": "dry ranch dressing mix",
+                "name": "dry ranch",
                 "type": "Condiments"
             },
             {
@@ -51,7 +51,7 @@
             },
             {
                 "quantity": "0.5",
-                "name": "kosher salt",
+                "name": "salt",
                 "type": "Baking"
             }
         ],
@@ -74,17 +74,17 @@
         "ingredients": [
             {
                 "quantity": "1",
-                "name": "beef broth",
+                "name": "beef",
                 "type": "Misc"
             },
             {
                 "quantity": "1",
-                "name": "dried green lentils",
+                "name": "green lentils",
                 "type": "Misc"
             },
             {
                 "quantity": "0.5",
-                "name": "basmati rice",
+                "name": "rice",
                 "type": "Misc"
             },
             {
@@ -167,22 +167,22 @@
         "ingredients": [
             {
                 "quantity": "2",
-                "name": "acorn squash",
+                "name": "acorn",
                 "type": "Produce"
             },
             {
                 "quantity": "1",
-                "name": "boiling water",
+                "name": "hot water",
                 "type": "Drinks"
             },
             {
                 "quantity": "2",
-                "name": "apples chopped into 1.4 inch pieces",
+                "name": "apples",
                 "type": "Produce"
             },
             {
                 "quantity": "0.5",
-                "name": "dried cranberries",
+                "name": "cranberries",
                 "type": "Produce"
             },
             {
@@ -192,7 +192,7 @@
             },
             {
                 "quantity": "2",
-                "name": "melted butter",
+                "name": "butter",
                 "type": "Dairy"
             }
         ],
@@ -213,7 +213,7 @@
         "ingredients": [
             {
                 "quantity": "200",
-                "name": "plain flour",
+                "name": "flour",
                 "type": "Baking"
             },
             {
@@ -328,17 +328,17 @@
         "ingredients": [
             {
                 "quantity": "1",
-                "name": "rolled oats, (not instant)",
+                "name": "rolled oats",
                 "type": "Baking"
             },
             {
                 "quantity": "1",
-                "name": "all-purpose flour",
+                "name": "flour",
                 "type": "Baking"
             },
             {
                 "quantity": "1",
-                "name": "grated orange rind",
+                "name": "grated orange",
                 "type": "Produce"
             },
             {
@@ -348,22 +348,22 @@
             },
             {
                 "quantity": "1",
-                "name": "cold butter, cubed",
+                "name": "butter",
                 "type": "Baking"
             },
             {
                 "quantity": "0.5",
-                "name": "packed brown sugar",
+                "name": "brown sugar",
                 "type": "Baking"
             },
             {
                 "quantity": "3",
-                "name": "fresh blueberries",
+                "name": "blueberries",
                 "type": "Produce"
             },
             {
                 "quantity": "0.5",
-                "name": "granulated sugar",
+                "name": "sugar",
                 "type": "Baking"
             },
             {
@@ -394,7 +394,7 @@
         "ingredients": [
             {
                 "quantity": "3",
-                "name": "skinless, boneless chicken breasts, halved lengthwise",
+                "name": "chicken breasts",
                 "type": "Meat"
             },
             {
@@ -424,32 +424,32 @@
             },
             {
                 "quantity": "2",
-                "name": "ripe mangoes, diced",
+                "name": "ripe mangoes",
                 "type": "Produce"
             },
             {
                 "quantity": "0.5",
-                "name": "dried cranberries",
+                "name": "cranberries",
                 "type": "Produce"
             },
             {
                 "quantity": "2",
-                "name": "green onions, thinly sliced",
+                "name": "green onions",
                 "type": "Produce"
             },
             {
                 "quantity": "1",
-                "name": "celery stalk, finely chopped",
+                "name": "celery stalk",
                 "type": "Produce"
             },
             {
                 "quantity": "6",
-                "name": "Boston lettuce",
+                "name": "lettuce",
                 "type": "Produce"
             },
             {
                 "quantity": "6",
-                "name": "English muffins, toasted",
+                "name": "muffins",
                 "type": "Misc"
             }
         ],
