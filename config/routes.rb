@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   get '/create-ingredient', to: 'ingredients#new'
 
   post '/add-ingredient', to: 'refrigerateurs#add_ingredient'
+
+  post '/remove-ingredient', to: 'refrigerateurs#remove_ingredient'
   
 end

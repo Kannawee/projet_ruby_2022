@@ -16,8 +16,13 @@
           <% refrigerateur.ingredients.each do |ingredientsdufrigo| %>
 
             <p><%= ingredientsdufrigo.name %></p>
-
+            <%= form_with model: @ingredient, url: "/remove-ingredient/", method: :post  do |form| %>
+              <%= form.hidden_field :id_refrigateur, value:refrigerateur.id %>
+              <%= form.hidden_field :id_ingredient, value:ingredientsdufrigo.id %>
+              <%= form.submit "remove" %>  
             <% end %>
+
+          <% end %>
         
 
         <h5> Liste des ingredients disponible </h5>

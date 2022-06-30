@@ -31,4 +31,16 @@ class RefrigerateursController < ApplicationController
         end
     end
 
+    def remove_ingredient
+        @refrigerateur_ingredient = RefrigerateurIngredient.find_by(
+            refrigerateur_id: params[:id_refrigateur],
+            ingredient_id: params[:id_ingredient]
+           )
+        @refrigerateur_ingredient.destroy
+    
+        respond_to do |format|
+          format.html { redirect_to '/'}
+        end
+      end
+
 end
