@@ -267,13 +267,12 @@
                     res.push(element[i]);
                 }
             }
-            console.log(res);
             generateHTML(res);
         }
     
         function generateHTML(res) {
           var recette = res[0];
-          var html = '<div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header">&nbsp;</div><div class="modal-body"><h4><i class="fa-solid fa-ellipsis"></i>'+recette.name+'&nbsp;<i class="fa-solid fa-ellipsis"></i></h4><div id="details"><h5><i class="fa-solid fa-carrot"></i>&nbsp; Ingredients :</h5><ul>';
+          var html = '<div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header" id="modal-tochange">&nbsp;</div><div class="modal-body"><h4><i class="fa-solid fa-ellipsis"></i>'+recette.name+'&nbsp;<i class="fa-solid fa-ellipsis"></i></h4><div id="details"><h5><i class="fa-solid fa-carrot"></i>&nbsp; Ingredients :</h5><ul>';
           recette.ingredients.forEach(function(ind, val){
             html += '<li>'+ind+'</li>';
           });
@@ -284,7 +283,9 @@
           html += '</p></div></div></div></div>';
           document.getElementById('exampleModal').innerHTML = html;
           document.getElementById('click-here-boy').click();
-          document.getElementById('card-bg-img').style.backgroundimage = "url("+recette.picture+")";
+          document.getElementById('card-bg-img').style.backgroundImage = "url("+recette.picture+")";
+          document.getElementById('modal-tochange').style.backgroundImage = 'url('+recette.picture+')';
+        console.log(document.getElementById('modal-tochange').style.backgroundImage);
         }
     
     </script>
@@ -372,7 +373,7 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header" id="modal-tochange">
                         &nbsp;
                     </div>
                     <div class="modal-body">
